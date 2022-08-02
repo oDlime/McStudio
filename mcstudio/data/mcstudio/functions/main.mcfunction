@@ -1,4 +1,4 @@
-scoreboard players add @e[tag=mate] stime 1
+execute as @e[tag=mate,scores={thr=10}] at @e[tag=mate] run scoreboard players add @e[tag=mate] stime 1
 execute as @e[tag=mate,scores={thr=10}] at @e[tag=mate] run function mcstudio:clrred
 execute as @e[tag=mate,scores={stime=0}] at @e[tag=mate] run summon minecraft:falling_block ~-4 ~10 ~-11 {Time:1,DropItem:0b,BlockState:{Name:"redstone_block"}}
 execute as @e[tag=mate,scores={stime=0}] at @e[tag=mate] run summon minecraft:falling_block ~2 ~10 ~-8 {Time:1,DropItem:0b,BlockState:{Name:"redstone_block"}}
